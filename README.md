@@ -21,9 +21,13 @@ Example
 A typical run will go like this.  Any SAT solver that reads DIMACS CNF files can be used. Here we use SAT SOLVER cryptominisat5 (it works in linux only)
 
 1.run code SATSolverDES.sage, the ANF file is generated (.EQS file) , press enter after the conversion (below steps) is completed
+
 2.run the Bard-Courtois-Jefferson tool to conver the ANF file to CNF (.CNF)
+
 3.$cryptominisat5 --verb 0 des_8.eqs.cnf > des_8.eqs.cnf.claim
+
 4."path to cnfclaimtoclaim.py" des_8.eqs.cnf.claim > des_8.eqs.claim.txt
+
 5.press enter in step 1.
 
 
