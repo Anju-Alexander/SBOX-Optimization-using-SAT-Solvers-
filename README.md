@@ -1,27 +1,20 @@
-This project tries to optimize the SBOX using SAT Solvers using CRV/PV method.
+This project tries to optimize the SBOX using SAT Solvers using CRV/PV method (https://eprint.iacr.org/2016/831.pdf)
 
 
 Dependencies
 
-The software "cnfclaimtoclaim.py" are part of the paper "Optimizing S-box Implementations for Several Criteria using SAT Solvers" by Ko Stoffelen, published at FSE 2016, available at (https://ko.stoffelen.nl/papers/fse2016-sboxoptimization.pdf).
-The link to the code "cnfclaimtoclaim.py" is https://github.com/Ko-/sboxoptimization
+The software "cnfclaimtoclaim.py" are part of the paper "Optimizing S-box Implementations for Several Criteria using SAT Solvers" by Ko Stoffelen,
+published at FSE 2016, available at (https://ko.stoffelen.nl/papers/fse2016-sboxoptimization.pdf).
+The link to the code "cnfclaimtoclaim.py" (https://github.com/Ko-/sboxoptimization)
 
 cnfclaimtoclaim.py
-In DIMACS CNF format, all variables are replaced by numbers. cnfclaimtoclaim.py takes care of a preprocessing step to translate a solution found by the SAT solver (CNF claim file) back to the original variable names. It writes to stdout.
+In DIMACS CNF format, all variables are replaced by numbers. cnfclaimtoclaim.py takes care of a preprocessing step to translate a solution found by 
+the SAT solver (CNF claim file) back to the original variable names. It writes to stdout.
 
-$ ./cnfclaimtoclaim.py -h
-usage: cnfclaimtoclaim.py [-h] claim [resolve]
-
-positional arguments:
-  claim       Name of the CNF claim file as provided by the SAT solver.
-  resolve     Name of the resolve file as provided by xl0.exe. If omitted,
-              <claim>.eqs.cnf.resolve will be used
-
-optional arguments:
-  -h, --help  show this help message and exit
 
 Tool for converting ANF file to CNF
-An implementation of Bard-Courtois-Jefferson for converting a sparse system of low-degree multivariate polynomials over GF(2) from ANF to CNF can be found here (http://www.nicolascourtois.com/software/CourtoisBardJefferson_public_distribution.zip)
+An implementation of Bard-Courtois-Jefferson for converting a sparse system of low-degree multivariate polynomials over GF(2) 
+from ANF to CNF can be found here (http://www.nicolascourtois.com/software/CourtoisBardJefferson_public_distribution.zip)
   
  
 Example
