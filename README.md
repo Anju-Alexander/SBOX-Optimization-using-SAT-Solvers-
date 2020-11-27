@@ -1,2 +1,1 @@
-# SBOX-Optimization-using-SAT-Solvers-
-SBOX Optimization using SAT Solvers
+This project tries to optimize the SBOX using SAT Solvers using CRV/PV method
